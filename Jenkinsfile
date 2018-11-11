@@ -4,7 +4,6 @@ pipeline {
     agent {
         docker {
             image 'node'
-            args '-u root'
             args '-p 3000:3000'
         }
     }
@@ -25,7 +24,7 @@ pipeline {
                 sh './jenkins/scripts/npmtest.sh'
             }
         }
-        stage('Deliver') {
+        stage('Deploy') {
             steps {
                 echo 'Deploying....'
                 sh './jenkins/scripts/deployment.sh'
