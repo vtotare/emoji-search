@@ -20,7 +20,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing....'
-                sh 'chmod 755 ./jenkins/scripts/npmtest.sh'
+                sh 'chmod 755 ./jenkins/scripts/*.sh'
                 sh './jenkins/scripts/npmtest.sh'
             }
         }
