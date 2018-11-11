@@ -7,11 +7,9 @@ pipeline {
             args '-u root'
         }
     }
-
     environment {
         CI = 'true'
     }
-
     stages {
         stage('Build') {
             steps {
@@ -20,19 +18,19 @@ pipeline {
             }
         }
         stage('Test') {
-                steps {
-                    echo 'Testing....'
-                    sh 'chmod 755 ./jenkins/scripts/npmtest.sh'
-                    sh './jenkins/scripts/npmtest.sh'
+            steps {
+                echo 'Testing....'
+                sh 'chmod 755 ./jenkins/scripts/npmtest.sh'
+                sh './jenkins/scripts/npmtest.sh'
             }
-            stage('Deliver') {
-               steps {
-                   echo 'Deploying....'
-                   sh './jenkins/scripts/deployment.sh'
-                   input message: 'Do you want to cancel the process? (Click "Proceed" to continue)'
-                   sh './jenkins/scripts/terminate.sh'
+        }
+        stage('Deliver') {
+            steps {
+                echo 'Deploying....'
+                sh './jenkins/scripts/deployment.sh'
+                input message: 'Do you want to cancel the process? (Click "Proceed" to continue)'
+                sh './jenkins/scripts/terminate.sh'
             }
-         }
-      }
+        }
     }
 }
