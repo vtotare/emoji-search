@@ -28,7 +28,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 sh './jenkins/scripts/deployment.sh'
-                input message: 'Access website http://<servername>:3000 in another tab of browser for continuous testing AND if testing is done? (Click "Proceed" to continue)'
+                input message: 'Access website http://servername:3000 in another tab of browser for continuous testing AND if testing is done? (Click "Proceed" to continue)'
                 sh './jenkins/scripts/terminate.sh'
             }
         }
