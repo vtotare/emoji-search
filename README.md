@@ -123,13 +123,14 @@ command in non-watch/interactive mode.
 ## 3. Docker
 - Containerization is the best approach if you are working on dev/test environment to test you code base as it gives more flexibility in terms of code change and setup.
 
-## 3. Jenkins
+## 4. Jenkins
 - Jenkins is extremely extensible tool, it can be modified and configured to handled practically any aspect of build orchestration and automation. In this setup, we'll have also choice to use `travis` for CI process but don't want to mess process by introducing more technology as long as one is working as swiss-knife (i.e Jenkins).
 
 
 ### Setup Information
 
-Jenkins Server - http://ec2-34-227-242-12.compute-1.amazonaws.com:8080 (As of now it is accessible from everywhere which we can restrict using NACL or Security Group)
+Jenkins Server - http://ec2-34-227-242-12.compute-1.amazonaws.com:8080
+  - As of now it is accessible from everywhere which we can restrict using NACL or Security Group.
 Github 		- https://github.com/vtotare/emoji-search
 
 
