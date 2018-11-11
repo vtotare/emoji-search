@@ -32,6 +32,7 @@ pipeline {
                    input message: 'Do you want to cancel the process? (Click "Proceed" to continue)'
                    sh './jenkins/scripts/terminate.sh'
             }
-       }
+         }
+      }
     }
 }
