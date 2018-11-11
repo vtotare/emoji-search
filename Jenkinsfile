@@ -11,12 +11,12 @@ pipeline {
     environment {
         CI = 'true'
     }
-    
+
     stages {
         stage('Build') {
             steps {
                 echo 'Building....'
-                sh 'npm install'
+                sh 'npm install || exit 1'
             }
         }
         stage('Test') {
