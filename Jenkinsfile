@@ -7,6 +7,11 @@ pipeline {
             args '-u root'
         }
     }
+
+    environment {
+        CI = 'true'
+    }
+    
     stages {
         stage('Build') {
             steps {
