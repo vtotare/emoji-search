@@ -129,10 +129,11 @@ command in non-watch/interactive mode.
 
 ### Setup Information
 
-Jenkins Server - http://ec2-34-227-242-12.compute-1.amazonaws.com:8080 - As of now it is accessible from everywhere which we can restrict using NACL or Security Group.
+Jenkins Server - http://ec2-34-227-242-12.compute-1.amazonaws.com:8080 
 Application Server - http://ec2-34-227-242-12.compute-1.amazonaws.com:3000
 Github 		- https://github.com/vtotare/emoji-search
 
+Note:- As of now these url are accessible from everywhere for your testing, which we can restrict using NACL or Security Group.
 
 ## Built With
 AWS EC2, Dockers, Jenkins, shell scripting
