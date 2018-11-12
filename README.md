@@ -130,6 +130,7 @@ command in non-watch/interactive mode.
 ### Setup Information
 
 Jenkins Server - http://ec2-34-227-242-12.compute-1.amazonaws.com:8080 - As of now it is accessible from everywhere which we can restrict using NACL or Security Group.
+Application Server - http://ec2-34-227-242-12.compute-1.amazonaws.com:3000
 Github 		- https://github.com/vtotare/emoji-search
 
 
